@@ -1,0 +1,69 @@
+@use "../base/variables" as *
+
+button, .button
+  display: inline-flex
+  font-size: 1.4rem
+  line-height: 1
+  font-weight: $fs_b
+  min-height: 4rem
+  min-width: 16rem
+  align-items: center
+  justify-content: center
+  padding-left: 1em
+  padding-right: 1em
+  text-align: center
+
+.button_style_1
+  color: $green_dark
+  border-radius: 2rem
+  border: 2px solid $green_dark
+  &:hover, &:active, &:focus
+    border: 2px solid $green_dark
+    border-radius: 2rem
+    background-color: $green_dark
+    color: $bg
+.button_style_2
+  min-height: 5rem
+  padding-right: 3rem
+  padding-left: 3rem
+  color: $bg
+  border-radius: 2.5rem
+  background-color: $green_dark
+  border: 2px solid $green_dark
+  box-shadow: 0 0 2em 0 $green
+  &:hover, &:active, &:focus
+    border: 2px solid $green
+    border-radius: 2.5rem
+    background-color: $green
+    color: $green_dark
+.button_fluid
+  width: 100%
+.round_click_button
+  display: block
+  position: relative
+  width: 16em
+  height: 16em
+  border-radius: 50%
+  background: url(../img/svg/triangle-green.svg) center center no-repeat, $bg
+  background-size: 3em, 100%
+  box-shadow: 0em 0em 3em 0em $gray_shadow
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 3em
+    height: 5em
+    background: url(../img/svg/triangle-active.svg) center center no-repeat
+    background-size: 3em
+    transform: translate(-50%, -50%)
+    opacity: 0
+  &:hover, &:active, &:focus
+    border-radius: 50%
+    background: url(../img/svg/triangle-green.svg) center center no-repeat,  $bg
+    background-size: 3em, 100%
+    box-shadow: 0em 0em 4em 0em $gray_shadow, 0 0 2em 0 $green_dark
+    &:after
+      opacity: 1
+

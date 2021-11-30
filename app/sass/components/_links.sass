@@ -1,0 +1,46 @@
+@use "../base/variables" as *
+
+.link_on_element
+  display: block
+  position: absolute
+  z-index: 8
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+.a_hover_green
+  &:hover, &:active
+    color: $green
+
+.a_hover_underline
+  border-bottom: 1px solid transparent
+  &:hover, &:active
+    border-bottom: 1px solid currentColor
+.a_green
+  color: $green
+  &:hover, &:active
+    color: $green_dark
+
+.a_underline
+  border-bottom: 1px solid currentColor
+  &:hover, &:active
+    border-bottom: 1px solid transparent
+.a_dark_green
+  color: $green_dark
+  &:hover, &:active
+    color: $green
+.a_hover_image
+  position: relative
+  display: block
+  img
+    object-fit: contain
+  .hover
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+  &:hover, &:active
+    img
+      opacity: 0
+    .hover
+      opacity: 1

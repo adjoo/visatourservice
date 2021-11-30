@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Центр Коррекции Осанки </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <link rel="icon" href="img/favicon/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
+
+    <meta name="theme-color" content="#e5f3eb">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/scripts.min.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container pt-3 pb-3 header_container header_container_bg">
+        <div class="d-flex">
+            <div class="col-lg-5 d-lg-block d-none pr-0">
+                <div class="d-flex mt-2">
+                    <i class="marker marker_time"></i>
+                    <div class="d-flex align-items-center flex-xl-nowrap flex-wrap">
+                        <span class="mr-2 text-nowrap">Пн - Пт с 9.00 до 20.00 </span>
+                        <i class="marker marker_dot mr-2 d-xl-inline-flex d-none"></i>
+                        <span class="text-nowrap">
+                                <span class="accent-red">Сб, Вс </span>
+                                с 9.00 до 15.30</span>
+                    </div>
+                </div>
+                <div class="d-flex my-3">
+                    <i class="marker marker_location"></i>
+                    <div class="d-flex align-items-center flex-xl-nowrap flex-wrap">
+                        <span>Ленина пр. 54а 6 этаж 613 офис</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col p-0 order-2 ">
+                <div class="header_logo mx-auto">
+                    <img src="img/logo.png" alt="Логотип Центр Коррекции Осанки">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-4 col px-lg-0 px-4 d-flex ml-lg-auto mr-lg-0 order-0 order-lg-3">
+                <div class="burger m-lg-auto mx-0 my-auto">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col d-flex flex-column order-4">
+                <div class="mt-xl-2 mt-auto ml-auto"><a
+                        class="h3 text-nowrap transition a-hover-green a-hover-underline" href="tel:+78312304402">+7
+                    (831) 230-44-02</a></div>
+                <div class="mt-3 mb-xl-3 mb-auto ml-auto">
+                    <button class="button_style_1 transition">Написать в Viber</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="popup_windows">
+    <div class="popup_window mfp-hide" id="popup_callback">
+        <div class="text-center mb-3"><span class="h1">Свяжитесь с&nbspнами</span></div>
+        <form class="d-flex flex-column">
+            <input type="text" name="name" required placeholder="Введите Ваше имя"
+                   class="my-3 transition input input_style_1 input_fluid">
+            <input type="text" name="phone" required placeholder="Введите Ваш номер телефона"
+                   class="my-3 transition input_style_1 input_fluid">
+            <div class="text-center my-3">
+                <p class="h7">Нажимая на кнопку “ОТПРАВИТЬ” Вы соглашаетесь с нашей политикой конфинденциальности и
+                    даете согласие на обработку
+                    <a href="" class="a_underline transition">персональных данных</a></p>
+            </div>
+            <div class="my-3"><input type="submit" class="button button_style_2 button_fluid transition"
+                                     value="Отправить"></div>
+        </form>
+    </div>
+
+    <div class="popup_window mfp-hide" id="popup_message">
+        <div class="text-center mb-3"><span class="h1">Спасибо за&nbspзаявку</span></div>
+        <div class="text-center">
+            <p>Наши менеджеры свяжутся с Вами, как только обработают Ваш запрос</p>
+        </div>
+
+    </div>
+</div>
+
+<main class="main">
+    <section class="section section_index_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 d-lg-block d-none ">
+                    <div class="section_index_1__main_page_block pt-4">
+                        <div class="section_index_1__main_page_block_img section_index_1__main_page_block_img-back">
+                            <img src="img/img-main-1.png" alt="bg">
+                        </div>
+                        <div class="section_index_1__main_page_block__link mt-4">
+                            <div class="mb-3"><span class="h2">Посмотрите</span></div>
+                            <div class="mb-4"><span>Небольшое видео<br>о нас</span></div>
+                            <a href="#popup_message" class="popup round_click_button transition">
+                            </a>
+                        </div>
+                        <div class="section_index_1__main_page_block_img section_index_1__main_page_block_img--front">
+                            <img src="img/img-main-2.png" alt="massagist">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 pl-5 pr-lg-0 pr-4 d-flex flex-column justify-content-center">
+                    <h1 class="ml-lg-5 mb-3 text-lg-left text-center"><span class="h1">Чувствуете усталость?</span></h1>
+                    <div class="ml-5 my-3 d-flex align-items-center">
+                        <div class="ml-n5"></div>
+                        <div class="ml-n5 pl-2 mr-4 pr-1">
+                            <i class="marker marker_triangle"></i>
+                        </div>
+                        <span class="h2">Устали от сидячего образа жизни?</span></div>
+                    <div class="ml-5 my-3 d-flex align-items-center">
+                        <div class="ml-n5"></div>
+                        <div class="ml-n5 pl-2 mr-4 pr-1">
+                            <i class="marker marker_triangle"></i>
+                        </div>
+                        <span class="h2">Ваша шея и голова постоянно в напряжении?</span></div>
+                    <div class="ml-5 my-3 d-flex align-items-center">
+                        <div class="ml-n5"></div>
+                        <div class="ml-n5 pl-2 mr-4 pr-1">
+                            <i class="marker marker_triangle"></i>
+                        </div>
+                        <span class="h2">Ваши мышцы просят расслабления?</span></div>
+                    <div class="ml-n4 my-4 d-flex">
+                        <div class=""></div>
+                        <div class="round_corners_block lines_on_block">
+                            <p><span class="h3_green">Приходите</span>, и мы всего за 1 час поможем расслабиться,<br>
+                                отдохнуть и снова почувствовать себя счастливым человеком.<br>
+                                Да, один час расслабляющего массажа помогает лучше 8 часов напряженного сна. Больше вам
+                                не нужен кофе и другие энергетики.<br>
+                                После полноценного расслабления вы готовы к работе.</p>
+                        </div>
+                    </div>
+                    <div class="ml-lg-5 mr-auto ml-auto mt-4">
+                        <a href="#popup_callback" class="popup button button_style_2 transition">ЗАПИСАТЬСЯ НА
+                            МАССАЖ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_index_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="mb-4"><span class="h1">Как мы можем Вам помочь?</span></h2>
+                    <h3 class="mt-3"><span
+                            class="h3_green">Сделайте 5 простых шагов к здоровью и правильной осанке</span></h3>
+                </div>
+                <div class="col-5 d-lg-flex d-none justify-content-end">
+                    <div class="section_index_2__pic mr-5 ">
+                        <img src="img/img-main-3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 px-lg-4 px-5 ml-lg-0 ml-4">
+                    <div class="d-flex flex-column mt-4 mb-5 animate__marker_line">
+                        <div class=""><span class="h2">Консультация специалиста</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class=""><p>Вам нужно <a href="#popup_callback"
+                                                      class="popup a_green a_underline transition">записаться</a> к
+                            нам на консультацию и мы проведём первичную диагностику совершенно <span class="h3_green">бесплатно</span>
+                        </p></div>
+                    </div>
+                    <div class="d-flex flex-column mb-5 animate__marker_line">
+                        <div class=""><span class="h2">Дополнительные исследования</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class=""><p>На этом этапе мы проводим комплексную диагностику и<br> направляем на
+                            рентгеновское исследование</p></div>
+                    </div>
+                    <div class="d-flex flex-column mb-5 animate__marker_line">
+                        <div class=""><span class="h2">Разработка схемы лечения</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class=""><p>Для каждого типа заболеваний и проблемных зон - мы<br> разрабатываем
+                            индивидуальную систему занятий</p></div>
+                    </div>
+                    <div class="d-flex flex-column mb-5 animate__marker_line">
+                        <div class=""><span class="h2">Лечение</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class=""><p>Самый длительный и важный этап. Лечение - это комплекс<br> различных
+                            мероприятий от занятий в зале до массажа</p></div>
+                    </div>
+                    <div class="d-flex flex-column mb-3 animate__marker_line">
+                        <div class=""><span class="h2">Результат</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class=""><p>Спустя несколько недель вы заметите, как меняется Ваша осанка,<br> а вместе с
+                            ней и качество жизни</p></div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-6 col-12 mt-3 mx-auto">
+                    <a href="#popup_callback" class="popup button button_style_2 button_fluid transition">ЗАПИСАТЬСЯ НА
+                        КОНСУЛЬТАЦИЮ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_index_3">
+        <div class="container p-0">
+            <div class="section_index_3__options_block">
+                <div class="section_index_3__options_item section_index_3__options_item_1 a_hover_green transition ">
+                    <a href="#popup_callback" class="popup link_on_element"></a>
+                    <div class="options_item__pic">
+                        <img src="img/img-main-4-1.png" alt="">
+                    </div>
+                    <div class="options_item__title my-3"><span class="h2">Кинезиотерапия</span></div>
+                </div>
+                <div class="section_index_3__options_item section_index_3__options_item_2 a_hover_green transition ">
+                    <a href="#popup_callback" class="popup link_on_element"></a>
+                    <div class="options_item__pic">
+                        <img src="img/img-main-5-1.png" alt="">
+                    </div>
+                    <div class="options_item__title my-3"><span class="h2">Физиотерапия</span></div>
+                </div>
+                <div class="section_index_3__options_item section_index_3__options_item__woman">
+                    <div class="options_item__pic"><img src="img/img-main-7-1.png" alt=""></div>
+                </div>
+                <div class="section_index_3__options_item section_index_3__options_item_3 a_hover_green transition ">
+                    <a href="#popup_callback" class="popup link_on_element"></a>
+                    <div class="options_item__pic">
+                        <img src="img/img-main-6-1.png" alt="">
+                    </div>
+                    <div class="options_item__title my-3"><span class="h2">Массаж</span></div>
+                </div>
+                <div class="section_index_3__options_item section_index_3__options_item_4 a_hover_green transition ">
+                    <a href="#popup_callback" class="popup link_on_element"></a>
+                    <div class="options_item__pic">
+                        <img src="img/img-main-9-1.png" alt="">
+                    </div>
+                    <div class="options_item__title my-3"><span class="h2">Ортопедические <br>товары</span></div>
+                </div>
+                <div class="section_index_3__options_item section_index_3__options_item_5 a_hover_green transition ">
+                    <a href="#popup_callback" class="popup link_on_element"></a>
+                    <div class="options_item__pic">
+                        <img src="img/img-main-8-1.png" alt="">
+                    </div>
+                    <div class="options_item__title my-3"><span class="h2">Консультации</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_index_4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 mr-auto text-lg-right text-center section_index_4__content">
+                    <h2><span class="h1">Вам нужна наша<br>помощь, если:</span></h2>
+
+                    <div class="animate__marker_line ">
+                        <div class="mt-xl-5 mt-4"><span class="h2">Вы испытываете головные боли</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class="mb-3"><p>Повторяющаяся головная боль - сигнализирует о наличии проблем с шейными
+                            позвонками и мышцами шеи</p></div>
+                    </div>
+
+                    <div class="animate__marker_line">
+                        <div class="mt-xl-5 mt-4"><span class="h2">Не можете перестать сутулиться</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class="mb-3"><p>Если вы чувствуете "груз" на плечах в конце дня - это сказывается
+                            сутулость</p>
+                        </div>
+                    </div>
+
+                    <div class="animate__marker_line">
+                        <div class="mt-xl-5 mt-4"><span class="h2">Не получается избавиться от живота</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class="mb-3"><p>Выпяченный живот, от которого не избавиться с помощью диет и фитнеса -
+                            результат неправильной осанки</p></div>
+                    </div>
+
+
+                    <div class="animate__marker_line">
+                        <div class="mt-xl-5 mt-4"><span class="h2">Испытываете проблемы в движениях</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class="mb-3"><p>Боль в коленях и икрах - тревожный сигнал. Нужно как можно скорее выявить
+                            причину и начать лечение</p></div>
+                    </div>
+                    <div class="animate__marker_line">
+                        <div class="mt-xl-5 mt-4"><span class="h2">Плохо спите</span></div>
+                        <div class="d-flex align-items-center marker_and_line">
+                            <i class="marker marker_triangle"></i>
+                            <div class="transition_slow"></div>
+                        </div>
+                        <div class="mb-3"><p>Ночные судороги можут говорить о наличии проблем с позвоночником</p></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-12 ml-lg-n3 ml-0 pt-3 px-lg-0 px-5 text-center">
+                    <div class="round_corners_block_2 h-100">
+                        <h2><span class="h1">Онлайн-запись</span></h2>
+                        <p class="m-3">Если вы обнаружили у себя какие-то из этих признаков,возможно, у Вас есть
+                            проблемы с позвоночником.</p>
+                        <p class="m-3">Запишитесь на бесплатную консультацию, чтобы вернуться к комфортной жизни</p>
+                        <form>
+                            <input type="text" name="name" required placeholder="Введите Ваше имя"
+                                   class="my-3 transition input input_style_1 input_fluid">
+                            <input type="text" name="phone" required placeholder="Введите Ваш номер телефона"
+                                   class="my-3 transition input_style_1 input_fluid">
+                            <input type="submit" class="my-3 button button_style_2 button_fluid transition"
+                                   value="ЗАПИСАТЬСЯ">
+                        </form>
+                        <div class="section_index_4__form_pic">
+                            <img src="img/img-main-10.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_index_6">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 mb-3 text-center">
+                    <h2><span class="h1">В нашем центре - Вы в надёжных руках</span></h2>
+                </div>
+                <div class="col-5 mt-4 pr-lg-4 pr-0">
+                    <div class="section_index_6__pic"><img src="img/img-main-11.png" alt=""></div>
+                </div>
+                <div class="col-7 mt-3 pt-3 pr-lg-0 pr-4 section_index_6__person_block">
+                    <div class="round_corners_block lines_on_block ">
+                        <div class="mb-3"><span class="h6">Руководитель центра</span></div>
+                        <div class="mb-3"><span class="h2">Равиль Резяпов</span></div>
+                        <div class="">
+                            <p class="mb-3">Специалист медицинского и коррекционного массажа с опытом более 15 лет.</p>
+                            <p class="">Мастер Су-джок терапии и автор собственных методик оздровления организма</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section_index_6__text_block_row">
+                <div class="col-5  d-lg-block d-none"></div>
+                <div class="col-lg-7 col-12 pt-3 pb-4 px-lg-4 p-5">
+                    <div class="section_index_6__text_block mt-4 mb-5">
+                        <p>Равным образом дальнейшее развитие различных форм деятельности способствует повышению
+                            актуальности направлений прогрессивного развития. С другой стороны постоянное
+                            информационно-техническое обеспечение нашей деятельности обеспечивает широкому кругу
+                            специалистов участие в формировании модели развития. Повседневная практика показывает, что
+                            сложившаяся структура организации требует от нас системного анализа дальнейших направлений
+                            развитая системы массового участия. С другой стороны повышение уровня гражданского сознания
+                            создаёт предпосылки качественно новых шагов для ключевых компонентов планируемого
+                            обновления. С другой стороны реализация намеченного плана развития позволяет оценить
+                            значение экономической целесообразности принимаемых решений.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-n3">
+                <div class="col-lg-5 col-3"></div>
+                <div class="col-lg-3 col-6 mt-n4">
+                    <button class="button_style_2 button_fluid transition" id="show_more_spec">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section section_services_2 hide" id="hidden_spec_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4"><span class="h1">Наши специалисты</span></h2>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="section_services_2__specialist_block ">
+                        <div class="section_services_2__specialist_block__image d-flex align-bottom">
+                            <img src="img/img-page-2.png" alt="person" class="mr-auto">
+                        </div>
+                        <div class="section_services_2__specialist_block__main round_corners_block lines_on_block">
+                            <div class="mb-3"><span class="h2">Фамилия Ирина</span></div>
+                            <div class="">
+                                <p class="mb-3">Массажист, мастер оздоровительных практик, консультант по здоровому
+                                    питанию.</p>
+                                <p class="">Опыт работы 12 лет</p>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                                <a href="" class="h3 a_dark_green transition mr-5 my-4">Почитать отзывы</a>
+                                <a href="#popup_callback" class="popup button button_style_2 transition">ЗАПИСАТЬСЯ НА
+                                    ПРИЁМ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="section_services_2__specialist_block">
+                        <div class="section_services_2__specialist_block__image d-flex align-bottom">
+                            <img src="img/img-page-3.png" alt="person" class="ml-auto">
+                        </div>
+                        <div class="section_services_2__specialist_block__main round_corners_block lines_on_block">
+                            <div class="mb-3"><span class="h2">Фамилия Фёдор</span></div>
+                            <div class="">
+                                <p class="mb-3">Массажист, мастер оздоровительных практик, консультант по здоровому
+                                    питанию.</p>
+                                <p class="">Опыт работы 12 лет</p>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                                <a href="" class="h3 a_dark_green transition mr-5 my-4">Почитать отзывы</a>
+                                <a href="#popup_callback" class="popup button button_style_2 transition">ЗАПИСАТЬСЯ НА
+                                    ПРИЁМ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section_index_7">
+        <div class="container p-0">
+            <div class="carousel__wrapper jcarusel" id="carousel_n1">
+                <div class="carousel__button prev transition"></div>
+                <div class="carousel__button next transition"></div>
+                <div class="carousel_list_wrapper">
+                    <div class="carousel__list carousel__list_3">
+                        <div class="">
+                            <div class="round_corners_block_3">
+                                <img src="img/img-main-13.png" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="round_corners_block_3">
+                                <img src="img/img-main-14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="round_corners_block_3">
+                                <img src="img/img-main-15.png" alt="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="round_corners_block_3">
+                                <img src="img/img-main-15.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_index_8">
+        <div class="container">
+            <div class="row">
+                <div class="section_index_8__header_block col-10 text-center mx-auto">
+                    <h2 class="section_index_8__header_block__title mb-lg-5 mb-4"><span
+                            class="h1">Ближайшие события</span></h2>
+                    <div class="mb-3">
+                        <p class="my-4 mx-auto">Нижегородский центр коррекции осанки – это еще и клуб любителей
+                            активного отдыха, путешествий, живого общения Если вы наши единомышленники – мы ждем именно
+                            вас!</p>
+                        <p class="my-4 mx-auto">Если же вы только решили примкнуть к рядам тех, кто не принимает
+                            пассивный отдых, но не знаете, с чего начать!? Мы знаем! И с радостью ждем вас! </p>
+                        <div class="my-4 "><span class="h3_green">Ведь правильная осанка - путь к здоровой и активной жизни!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 my-5 ">
+                    <div class="round_corners_block section_index_8__event_block">
+                        <div class="section_index_8__event_date">
+                            <div class="day"><span class="h2_v3">17</span></div>
+                            <div class="mounth"><span class="h6_v2">СЕН</span></div>
+                        </div>
+                        <div class="section_index_8__event_header">
+                            <img src="img/img-main-16.png" alt="">
+                            <h3><span class="h2">Путешествие до Ичалковских пещер</span></h3>
+                        </div>
+                        <div class="section_index_8__event_main">
+                            <p class="my-4">Представьте на минутку: запах леса после дождя, тишина, нарушаемая только
+                                пением птиц и щебетанием сверчков, манящая прохлада пещер и душевная компания…Что может
+                                быть лучше!?</p>
+                            <a href="" class="a_dark_green h3 transition a_hover_underline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 my-5">
+                    <div class="round_corners_block section_index_8__event_block">
+                        <div class="section_index_8__event_date">
+                            <div class="day"><span class="h2_v3">20</span></div>
+                            <div class="mounth"><span class="h6_v2">АПР</span></div>
+                        </div>
+                        <div class="section_index_8__event_header">
+                            <img src="img/img-main-17.png" alt="">
+                            <h3><span class="h2">Сплав на байдарках</span></h3>
+                        </div>
+                        <div class="section_index_8__event_main">
+                            <p class="my-4">Представьте на минутку: запах леса после дождя, тишина, нарушаемая только
+                                пением птиц и щебетанием сверчков, манящая прохлада пещер и душевная компания…Что может
+                                быть лучше!?</p>
+                            <a href="" class="a_dark_green h3 transition a_hover_underline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer section">
+    <div class="container p-lg-0 p-4">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-12 mx-auto px-lg-0 px-4 d-flex">
+                <div class="footer_block round_corners_block pt-4 pb-4 d-flex flex-column mr-lg-n4 align-self-center">
+                    <h3 class="mb-4"><span class="h1">Контакты</span></h3>
+                    <div class="d-flex my-4 pl-5">
+                        <i class="marker marker_location"></i>
+                        <div class="">
+                            <div class=""><span class="h4">Телефон:</span></div>
+                            <div class=""><span>+7 (987) 393 40 93</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex my-4 pl-5">
+                        <i class="marker marker_location"></i>
+                        <div class="">
+                            <div class=""><span class="h4">Email:</span></div>
+                            <div class=""><span>ra-vil@list.ru</span></div>
+                        </div>
+                    </div>
+                    <div class="d-flex my-4 pl-5">
+                        <i class="marker marker_location"></i>
+                        <div class="">
+                            <div class=""><span class="h4">Адрес:</span></div>
+                            <div class=""><span>Нижний Новгород, пр. Ленина, д. 54а, этаж 6, оф. 613</span></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <div class="mr-5">
+                                <a href="" class="a_hover_image transition">
+                                    <img src="img/svg/instagram-logo.svg" alt="" class="footer_social_link transition">
+                                    <img src="img/svg/instagram-logo-active.svg" alt=""
+                                         class="footer_social_link hover transition">
+                                </a>
+                            </div>
+                            <div class="mr-5">
+                                <a href="" class="a_hover_image transition">
+                                    <img src="img/svg/youtube-logo.svg" alt="" class="footer_social_link transition">
+                                    <img src="img/svg/youtube-logo-active.svg" alt=""
+                                         class="footer_social_link hover transition">
+                                </a>
+                            </div>
+                            <div class="mr-5">
+                                <a href="" class="a_hover_image transition">
+                                    <img src="img/svg/vk-logo.svg" alt="" class="footer_social_link transition">
+                                    <img src="img/svg/vk-logo-active.svg" alt=""
+                                         class="footer_social_link hover transition">
+                                </a>
+                            </div>
+                            <div class=""><span class="h4">Присоединяйтесь к нам<br>в социальных сетях:</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 mx-auto mt-lg-0 mt-n5">
+                <div class="footer_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.307310360405!2d43.921053385686044!3d56.276442534540976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e2a659c752d0d%3A0xb0406c5b58f46032!2z0L_RgC4g0JvQtdC90LjQvdCwLCA1NNCQLCDRjdGC0LDQtiA2LCDQvtGELiA2MTMsINCd0LjQttC90LjQuSDQndC-0LLQs9C-0YDQvtC0LCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCA2MDMwNzM!5e0!3m2!1sru!2sru!4v1617376992381!5m2!1sru!2sru"
+                            frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-12 col-10 mx-auto pt-lg-5 pt-4 pb-4 footer_bottom text-center"><span>© Все права защищены. 2020 год</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

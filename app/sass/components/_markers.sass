@@ -1,0 +1,58 @@
+@use "../base/variables" as *
+
+.marker
+  content: ''
+  font-size: 1rem
+  display: inline-flex
+  position: relative
+  justify-content: center
+  align-items: center
+  height: 3em
+  width: 3.6em
+  min-width: 3.6em
+.marker_dot
+  min-width: 1.6em
+  width: 1.6em
+  &:before
+    content: ''
+    position: relative
+    display: block
+    background-color: $green
+    width: .9em
+    height: .9em
+    border-radius: 50%
+
+.marker_location
+  background: url(../img/svg/periscope-logo.svg) center center no-repeat
+.marker_time
+  background: url(../img/svg/clock.svg) center center no-repeat
+.marker_time, .marker_location
+  background-size: 1.8em
+  margin-right: 1em
+  background-color: $green_light
+  border-top-right-radius: 1.5em
+  border-bottom-right-radius: 1.5em
+  &:before
+    content: ''
+    position: absolute
+    top: 0em
+    bottom: 0em
+    left: -3em
+    right: 100%
+    display: block
+    background-color: $green_light
+.marker_triangle
+  //real size 4x4em
+  width: 8em
+  height: 8em
+  min-height: 8em
+  min-width: 8em
+  margin: -2em
+  background: url(../img/svg/triangle-green.svg) 53% center no-repeat, url(../img/svg/triangle-white.svg) 58% center no-repeat
+  background-size: 16%, 37%
+  background: url(../img/svg/triangle-green.svg) 53% center no-repeat, url(../img/svg/triangle-white.svg) 58% center no-repeat, radial-gradient(circle, $gray_shadow 0%, transparent 66%) center no-repeat
+  background-size: 16%, 37%, 100%
+
+
+
+
