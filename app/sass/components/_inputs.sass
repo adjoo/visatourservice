@@ -1,10 +1,11 @@
+//оформление инпутов, чекбоксов, текстовых полей и других полей ввода для форм
 @use "../base/variables" as *
 
 .input , .input_style_1
   display: inline-flex
   font-size: 1.6rem
   line-height: 1
-  font-weight: $fs_b
+  font-weight: $fs_semi
   min-height: 5rem
   min-width: 16rem
   align-items: center
@@ -12,14 +13,5 @@
   padding-left: 2em
   padding-right: 1.5em
   &::placeholder
-    font-weight: $fs_l
-.input_style_1
-  border-radius: 2.5rem
-  border: 2px solid $green_light
-  background-color: $green_light
-  &:hover, &:active, &:focus
-    border: 2px solid $green_dark
-    border-radius: 2.5rem
-    background-color: $green_light
-.input_fluid
-  width: 100%
+    font-weight: $fs_light
+

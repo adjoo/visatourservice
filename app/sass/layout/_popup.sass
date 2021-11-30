@@ -1,3 +1,4 @@
+//стили Выпадающих окон общие и в частности
 @use "../base/variables" as *
 .mfp_popup_window
   .mfp-container
@@ -6,7 +7,7 @@
     transform: scaleY(0.9)
     transform-origin: top
   &.mfp-bg
-    background-color: $green_light
+    background-color: $bg
     opacity: 0
     transition: opacity 0.2s ease .05s
   &.mfp-ready
@@ -37,7 +38,7 @@
   background-color: $bg
   padding: 3rem
   border-radius: 1rem
-  box-shadow: 0em 0em 3em 0em $gray_shadow
+  box-shadow: 0em 0em 3em 0em $bg
   &:before, &:after
     display: block
     position: absolute
@@ -63,14 +64,14 @@
     position: absolute
     top: -5rem
     right: 0
-    color: $green_dark
+    color: $bg
     min-width: unset
     min-height: unset
     width: 3rem
     height: 3rem
     font-size: 6rem
     line-height: 3rem
-    font-weight: $fs_l
+    font-weight: $fs_light
     font-family: inherit
   @media (max-width: 800px)
     width: calc(100% - 6rem)

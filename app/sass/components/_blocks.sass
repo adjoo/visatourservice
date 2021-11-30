@@ -1,53 +1,11 @@
+//оформление универсальных блоков, которые есть на всех страницах
 @use "../base/variables" as *
 
 .hide
   display: none
 .section
   position: relative
-  padding: 5em 0
-  &:before
-    position: absolute
-    top: 0
-    display: block
-    left: 50%
-    width: 100rem
-    transform: translateX(-50%)
-    @media (min-width: 992px)
-      width: 192rem
+  padding: 5rem 0
 
-.round_corners_block
-  font-size: 1rem
-  padding: 3em 1.6em 3em 2.8em
-  border-radius: 3em
-  box-shadow: 0em 0em 3em 0em $gray_shadow
-  background-color: $bg
-.round_corners_block_2
-  font-size: 1rem
-  padding: 1.6em 2.8em 1.6em 2.8em
-  border-radius: 1em
-  box-shadow: 0em 0em 3em 0em $gray_shadow
-  background-color: $bg
-
-.lines_on_block
-  position: relative
-  &:before, &:after
-    content: ''
-    display: block
-    position: absolute
-    left: 3em
-    height: 3px
-    background-color: $green
-    width: 16em
-    max-width: 80%
-  &:before
-    top: -2px
-  &:after
-    bottom: -2px
-.round_corners_block_3
-  font-size: 1rem
-  border-radius: 3em
-  box-shadow: 0em 0em 1em 0em $gray_shadow
-  background-color: $bg
-  overflow: hidden
 
 
