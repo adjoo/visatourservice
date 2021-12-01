@@ -1,4 +1,18 @@
 @use "variables" as *
+
+//span 14 - auto - regular - dark_text
+span
+  font-size: 1.4rem
+  line-height: 1em
+  font-weight: $fs_regular
+
+//p 14 - 150% - regular - dark_text
+p
+  max-width: 80ch
+  font-size: 1.4rem
+  line-height: 1.5em
+  font-weight: $fs_regular
+
 //H1 48px - auto - semi - dark_text
 .h1
   font-size: 4.8rem
@@ -30,22 +44,32 @@
   line-height: 1.3em
   font-weight: $fs_light
 
-//H5 14 -130 - medium - dark_text
-.h5, span
+//H5 14 -130% - medium - dark_text
+.h5
   font-size: 1.4rem
   line-height: 1.3em
   font-weight: $fs_med
 
-p
-  max-width: 80ch
-  font-size: 1.4rem
-  line-height: 1.5em
-  font-weight: $fs_regular
-
+//description 11 -100% - regular - dark_text
 .description
   font-size: 1.1rem
   line-height: 1
   font-weight: $fs_regular
+
+.numbersBold
+  font-size: 3.6rem
+  line-height: 1
+  font-weight: $fs_bold
+
+.numbersMedium
+  font-size: 3.6rem
+  line-height: 1
+  font-weight: $fs_bold
+.textInMarker
+  font-size: 1rem
+  line-height: 1
+  font-weight: $fs_med
+
 
 
 .accent
@@ -58,5 +82,7 @@ p
 .uppercase
   text-transform: uppercase
 
-.strong
+.strong, strong
   font-weight: $fs_semi
+.regular
+  font-weight: $fs_regular
