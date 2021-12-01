@@ -2,4 +2,76 @@
 @use "../base/variables" as *
 
 .header
+  padding: 3rem 1rem 2rem
+  @media (max-width: 1199px)
+    padding: 2rem 1rem
+    @media (max-width: 991px)
+    padding: 2rem 1rem
+.header_logo__wrapper
+  display: flex
+  max-width: 20rem
+  min-width: 20rem
+
+.header_logo__img
+  width: 4.2em
+  height: 4.2em
+  flex-shrink: 0
+  margin-right: .7em
+.header_logo__company
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+.header_logo__company__name
+  line-height: 1
+.header_logo__company__describer
+  line-height: 1
+  &:before
+    display: block
+    content: ''
+    position: relative
+    width: 13.6rem
+    height: 1px
+    background-color: $accent
+.header_nav
+  display: flex
+  align-items: center
+  height: 100%
+  white-space: nowrap
+.header_navLink + .header_navLink
+  margin-left: 2rem
+  @media (min-width: 1200px)
+    margin-left: 5rem
+.header_nav
+  @media (max-width: 991px)
+    padding: 1rem 0 0
+    min-width: 50rem
+    justify-content: space-between
+    flex-wrap: wrap
+    .header_navLink
+      margin: 1rem 1.5rem 0
+  @media (max-width: 550px)
+    min-width: 28rem
+
+
+.header_phoneNumber
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  white-space: nowrap
+  span, strong
+    font-size: 2.4rem
+  .button
+    margin-left: 1.5rem
+  @media (max-width: 1199px)
+    span, strong
+      font-size: 1.8rem
+  @media (max-width: 450px)
+    span, strong
+      display: none
+    .button
+      font-size: 1.2rem
+      margin-left: auto
+
+
+
 

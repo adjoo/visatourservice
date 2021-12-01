@@ -3,5 +3,22 @@
 @use 'utilities' as *
 @use 'components' as *
 @use 'layout' as *
+//все стили до рефакторинга здесь
 
-.section_index_1
+.section_1
+.s1_wrapper
+  display: flex
+  flex-direction: column
+  text-align: center
+  .button + .button
+    margin-left: 2rem
+.s1__decoration
+  margin-top: 8rem
+  height: 26rem
+  width: 100%
+  background-image: url(../img/clouds1st.png), url(../img/image1st-noclouds.png)
+  background-position: 50% 0%, 50% 100%
+  background-repeat: repeat-x, repeat-x
+  background-size: 1920px auto, 1920px auto
+
+
