@@ -71,8 +71,8 @@
 .section_3
   padding-bottom: 14rem
   background: url(../img/bg_s4.png) center bottom no-repeat
-
-
+  @media (max-width: 991px)
+    padding-bottom: 2rem
 .s3_item
   display: flex
   align-items: flex-start
@@ -85,8 +85,87 @@
   display: flex
   align-items: center
 
+.s4_list
+  display: flex
+  flex-wrap: wrap
+  margin: -1rem
+  @media (max-width: 991px)
+    padding: 2rem 0
+.s4_list__item
+  display: flex
+  flex: 1 1 40%
+  align-items: flex-start
+  max-width: 41rem
+  min-width: 29rem
+  margin: 1rem 1rem 6rem
+  @media (max-width: 991px)
+    margin: 1rem 1rem
+  p
+    max-width: 31rem
 
+.section_5
+  &:after
+    display: block
+    content: ''
+    position: relative
+    height: 37rem
+    width: 192rem
+    left: 50%
+    margin-left: -50vw
+    margin-top: -33rem
+    background: url(../img/bg_s6.png) center center no-repeat
+.s5_list
+  display: flex
+  flex-wrap: wrap
+  margin: -1rem
+  @media (max-width: 991px)
+    padding: 2rem 0
+.s5_list__item
+  display: flex
+  align-items: center
+  flex: 1 1 40%
+  max-width: 38rem
+  min-width: 29rem
+  margin: 1rem 1rem 4rem
+  @media (max-width: 991px)
+    margin: 1rem 1rem
+.section_6
+  &:after
+    display: block
+    content: ''
+    position: relative
+    height: 53rem
+    margin-bottom: -33rem
+    width: 192rem
+    left: 50%
+    margin-left: -50vw
+    margin-top: -20rem
+    background: url(../img/bg_s7.png) center center no-repeat
+    @media (max-width: 991px)
+      margin-bottom: -13rem
+      margin-top: -40rem
+.s6_list
+  display: flex
+  flex-wrap: wrap
+  margin: -1rem
+  @media (max-width: 991px)
+    padding: 2rem 0
+.s6_list__item
+  display: flex
+  align-items: flex-start
+  flex: 1 1 40%
+  max-width: 41rem
+  min-width: 29rem
+  margin: 1rem 1rem 4rem
+  @media (max-width: 991px)
+    margin: 1rem 1rem
 
+.section_7
+  .section_headers
+    max-width: 100%
+.s7__item
+  margin: 1rem auto 1rem 0
+  max-width: 38rem
 
 
 
