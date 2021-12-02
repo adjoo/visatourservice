@@ -10,8 +10,8 @@
   display: flex
   flex-direction: column
   text-align: center
-  .button + .button
-    margin-left: 2rem
+  .button
+    margin: 0 1rem
 .s1__decoration
   margin-top: 8rem
   height: 26rem
@@ -20,5 +20,74 @@
   background-position: 50% 0%, 50% 100%
   background-repeat: repeat-x, repeat-x
   background-size: 1920px auto, 1920px auto
+  @media (max-width: 1199px)
+    margin-top: 1rem
+  @media (max-width: 575px)
+    margin-top: -8rem
+.s1_wrapper
+  @media (max-width: 767px)
+    .h1
+      font-size: 3.6rem
+    .h2_l, .h2
+      font-size: 2.4rem
+  @media (max-width: 450px)
+    .h1
+      font-size: 3rem
+    .h2_l, .h2
+      font-size: 1.8rem
+
+.section_2
+  padding-top: 0
+  background: url(../img/bg_s3.png) right bottom no-repeat
+.s2_list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: -1rem -1rem 7rem
+.s2_list__item
+  flex: 1 1 18%
+  margin: 1rem
+  min-width: 18rem
+  div > span
+    margin-right: 1rem
+.section_headers
+  display: flex
+  flex-direction: column
+  max-width: 80ch
+.s2_description
+.s2_item
+  display: flex
+  align-items: flex-start
+  p
+    max-width: 36ch
+.s2_certificates
+  padding: 0
+  div
+    display: inline-block
+    width: 49%
+    padding: 1.5rem
+    img
+      box-shadow: 4px 4px 30px rgba(148, 176, 192, 0.17)
+.section_3
+  padding-bottom: 14rem
+  background: url(../img/bg_s4.png) center bottom no-repeat
+
+
+.s3_item
+  display: flex
+  align-items: flex-start
+  .h5
+    white-space: nowrap
+.s3_list
+  display: flex
+  flex-direction: column
+.s3_list__item
+  display: flex
+  align-items: center
+
+
+
+
+
 
 

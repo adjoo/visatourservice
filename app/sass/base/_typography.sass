@@ -35,12 +35,16 @@ p
   font-size: 3.6rem
   line-height: 1.2
   font-weight: $fs_semi
+  @media (max-width: 767px)
+    font-size: 3rem
   
 //H2 36px - auto - light - dark_text
 .h2_l
   font-size: 3.6rem
   line-height: 1.2
   font-weight: $fs_light
+  @media (max-width: 767px)
+    font-size: 3rem
 
 //H3 18 - 130% - semi - dark_text
 .h3
@@ -78,16 +82,18 @@ p
   font-weight: $fs_bold
 
 .numbersMedium
-  font-size: 3.6rem
+  font-size: 1.4rem
   line-height: 1
   font-weight: $fs_bold
 
+.numberInMarker
+  font-size: 2.4rem
+  line-height: 1
+  font-weight: $fs_bold
 .textInMarker
   font-size: 1rem
   line-height: 1
   font-weight: $fs_med
-
-
 
 .accent
   color: $accent
