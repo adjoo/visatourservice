@@ -28,9 +28,17 @@ $(document).ready(function () {
         },
     });
 
+    //плавный скролл по странице
 
-    /*  $.magnificPopup.open({
-          items:  {src: "#popup_callback"},
+    $("a[href^='#'].scroll").click(function () {
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top + "px"}, $(_href).offset().top / 5, 'swing',);
+        return false;
+    });
+
+
+    /*$.magnificPopup.open({
+          items:  {src: "#popup_form_small"},
           type: "inline",
           mainClass: popupWindowClass,
           closeBtnInside: true,
@@ -60,42 +68,42 @@ $(document).ready(function () {
       });*/
 
     //jcarousel инициализация*************************************
-    const CAROUSELITEM = "#carousel_n1 .carousel_list_wrapper";
-    const CAROUSELBUTTONPREV = "#carousel_n1 .carousel__button.prev";
-    const CAROUSELBUTTONNEXT= "#carousel_n1 .carousel__button.next";
+    /* const CAROUSELITEM = "#carousel_n1 .carousel_list_wrapper";
+     const CAROUSELBUTTONPREV = "#carousel_n1 .carousel__button.prev";
+     const CAROUSELBUTTONNEXT= "#carousel_n1 .carousel__button.next";
 
 
-    $(CAROUSELITEM).jcarousel({
-        wrap: 'circular'
-    });
-    $(CAROUSELBUTTONPREV).click(function () {
-        $(CAROUSELITEM).jcarousel('scroll', '-=1');
-    });
-    $(CAROUSELBUTTONNEXT).click(function () {
-        $(CAROUSELITEM).jcarousel('scroll', '+=1');
-    });
-    $(CAROUSELITEM).swipe(
-        function(direction) {
-            switch (direction) {
-                case 'left':
-                    $(CAROUSELITEM).jcarousel('scroll', '+=1');
-                    break;
-                case 'right':
-                    $(CAROUSELITEM).jcarousel('scroll', '-=1');
-                    break;
-            }
-        },
-        {
-            preventDefault: false,
-            mouse: false,
-            pen: true,
-            distance: 50
-        }
-    );
+     $(CAROUSELITEM).jcarousel({
+         wrap: 'circular'
+     });
+     $(CAROUSELBUTTONPREV).click(function () {
+         $(CAROUSELITEM).jcarousel('scroll', '-=1');
+     });
+     $(CAROUSELBUTTONNEXT).click(function () {
+         $(CAROUSELITEM).jcarousel('scroll', '+=1');
+     });
+     $(CAROUSELITEM).swipe(
+         function(direction) {
+             switch (direction) {
+                 case 'left':
+                     $(CAROUSELITEM).jcarousel('scroll', '+=1');
+                     break;
+                 case 'right':
+                     $(CAROUSELITEM).jcarousel('scroll', '-=1');
+                     break;
+             }
+         },
+         {
+             preventDefault: false,
+             mouse: false,
+             pen: true,
+             distance: 50
+         }
+     );
 
 
-    $('body').on('click','#show_more_spec', function() {
-        $("#hidden_spec_section").slideToggle(300);
-    })
+     $('body').on('click','#show_more_spec', function() {
+         $("#hidden_spec_section").slideToggle(300);
+     })*/
 })
 

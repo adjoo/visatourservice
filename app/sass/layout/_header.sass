@@ -5,7 +5,7 @@
   padding: 3rem 1rem 2rem
   @media (max-width: 1199px)
     padding: 2rem 1rem
-    @media (max-width: 991px)
+  @media (max-width: 991px)
     padding: 2rem 1rem
 .header_logo__wrapper
   display: flex
@@ -24,14 +24,11 @@
 .header_logo__company__name
   line-height: 1
 .header_logo__company__describer
+  width: 14rem
   line-height: 1
-  &:before
-    display: block
-    content: ''
-    position: relative
-    width: 13.6rem
-    height: 1px
-    background-color: $accent
+  padding-top: 2px
+  border-top: 1px solid $accent
+
 .header_nav
   display: flex
   align-items: center

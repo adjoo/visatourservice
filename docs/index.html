@@ -38,17 +38,16 @@
             </div>
             <div class="col-xl-6 col order-2 order-lg-1 px-0 px-xl-4">
                 <nav class="header_nav">
-                    <a href="#" class="header_navLink a transition_slow"><span class="h5">Высокий доход</span></a>
-                    <a href="#" class="header_navLink a transition_slow"><span class="h5">Что входит?</span></a>
-                    <a href="#" class="header_navLink a transition_slow"><span
-                            class="h5">Коммерческие условия</span></a>
-                    <a href="#" class="header_navLink a transition_slow"><span class="h5">Контакты</span></a>
+                    <a href="#scroll_item_4" class="scroll header_navLink a transition_slow"><span class="h5">Высокий доход</span></a>
+                    <a href="#scroll_item_3" class="scroll header_navLink a transition_slow"><span class="h5">Что входит?</span></a>
+                    <a href="#scroll_item_9" class="scroll header_navLink a transition_slow"><span class="h5">Коммерческие условия</span></a>
+                    <a href="#scroll_item_contacts" class="scroll header_navLink a transition_slow"><span class="h5">Контакты</span></a>
                 </nav>
             </div>
             <div class="col-xl-3 col order-1 order-lg-2 p-0">
                 <div class="header_phoneNumber">
                     <span>8 (495) <strong>150 46–56</strong></span>
-                    <a href="" class="popup button button-svg transition_fast">
+                    <a href="#popup_form_small" class="popup button button-svg transition_fast">
                         <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.000494957 11.9791V14.3877C-0.000413895 14.6113 0.0454798 14.8327 0.135237 15.0375C0.224995 15.2424 0.356637 15.4263 0.521733 15.5775C0.686829 15.7286 0.881739 15.8437 1.09398 15.9154C1.30622 15.987 1.53111 16.0136 1.75425 15.9935C4.22976 15.725 6.60765 14.8808 8.69688 13.5286C10.6406 12.2959 12.2886 10.6512 13.5237 8.71134C14.8833 6.61679 15.7294 4.23206 15.9935 1.75036C16.0136 1.52834 15.9871 1.30457 15.9158 1.0933C15.8445 0.882034 15.7299 0.687898 15.5794 0.523253C15.4288 0.358607 15.2455 0.22706 15.0411 0.136987C14.8368 0.0469136 14.6159 0.000287778 14.3926 7.78413e-05H11.9791C11.5887 -0.00375708 11.2102 0.134222 10.9142 0.388297C10.6182 0.642373 10.4248 0.995207 10.3702 1.38103C10.2683 2.15185 10.0794 2.9087 9.80705 3.63713C9.69882 3.9245 9.67539 4.23682 9.73955 4.53707C9.80371 4.83732 9.95277 5.11292 10.1691 5.33121L11.1908 6.35087C10.0455 8.36092 8.37794 10.0252 6.3639 11.1682L5.34221 10.1485C5.12349 9.93264 4.84734 9.78387 4.54649 9.71984C4.24564 9.6558 3.93271 9.67918 3.64477 9.78721C2.91489 10.059 2.15654 10.2476 1.38419 10.3492C0.993406 10.4042 0.636512 10.6007 0.381388 10.9012C0.126264 11.2017 -0.00929451 11.5853 0.000494957 11.9791Z"
                                   fill="currentcolor"/>
@@ -61,29 +60,49 @@
 </header>
 
 <div class="popup_windows">
-    <div class="popup_window mfp-hide" id="popup_callback">
-        <div class="text-center mb-3"><span class="h1">Свяжитесь с&nbspнами</span></div>
-        <form class="d-flex flex-column">
-            <input type="text" name="name" required placeholder="Введите Ваше имя"
-                   class="my-3 transition input input_style_1 input_fluid">
-            <input type="text" name="phone" required placeholder="Введите Ваш номер телефона"
-                   class="my-3 transition input_style_1 input_fluid">
-            <div class="text-center my-3">
-                <p class="h7">Нажимая на кнопку “ОТПРАВИТЬ” Вы соглашаетесь с нашей политикой конфинденциальности и
-                    даете согласие на обработку
-                    <a href="" class="a_underline transition">персональных данных</a></p>
-            </div>
-            <div class="my-3"><input type="submit" class="button button_style_2 button_fluid transition"
-                                     value="Отправить"></div>
+
+    <div class="popup_window mfp-hide" id="popup_form_small">
+        <div class="popup_window__title ">
+            <span class="h3">Заказ<br> обратного звонка</span>
+        </div>
+        <form action="" class="mt-3">
+            <label for="popup_small_name" class="input_style_1 mb-5 transition_slow">
+                <span>Имя</span>
+                <input type="text" id="popup_small_name" name="name" placeholder="Константин" class="input" required>
+            </label>
+            <label for="popup_small_phone" class="input_style_1 mb-5 transition_slow">
+                <span>Телефон</span>
+                <input type="text" id="popup_small_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input" required
+                       autocomplete="off">
+            </label>
+            <input type="submit" value="Заказать звонок" class="button_submit button button_style_1 transition_slow">
+            <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
+                <a href="#" class="a  transition">обработку персональных данных </a></p>
         </form>
     </div>
 
-    <div class="popup_window mfp-hide" id="popup_message">
-        <div class="text-center mb-3"><span class="h1">Спасибо за&nbspзаявку</span></div>
-        <div class="text-center">
-            <p>Наши менеджеры свяжутся с Вами, как только обработают Ваш запрос</p>
+    <div class="popup_window mfp-hide" id="popup_form_big">
+        <div class="popup_window__title">
+            <span class="h3">Оставьте заявку<br> и мы свяжемся с вами</span>
         </div>
-
+        <form action="" class="mt-3">
+            <label for="popup_big_name" class="input_style_1 mb-5 transition_slow">
+                <span>Имя</span>
+                <input type="text" id="popup_big_name" name="name" placeholder="Константин" class="input" required>
+            </label>
+            <label for="popup_big_phone" class="input_style_1 mb-5 transition_slow">
+                <span>Телефон</span>
+                <input type="text" id="popup_big_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input" required
+                       autocomplete="off">
+            </label>
+            <label for="popup_big_email" class="input_style_1 mb-5 transition_slow">
+                <span>Email</span>
+                <input type="text" id="popup_big_email" name="email" placeholder="pgg@vk.com" class="input" required>
+            </label>
+            <input type="submit" value="Оставить заявку" class="button_submit button button_style_1 transition_slow">
+            <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
+                <a href="#" class="a  transition">обработку персональных данных </a></p>
+        </form>
     </div>
 </div>
 
@@ -100,16 +119,15 @@
                         востребованную
                         франшизу</h3>
                     <div class="d-flex justify-content-center mt-5 flex-wrap">
-                        <a href="#" class="popup button button_style_1 transition_slow mb-3 mb-lg-0">Стать владельцем
+                        <a href="#popup_form_big" class="popup button button_style_1 transition_slow mb-3 mb-lg-0">Стать владельцем
                             сети</a>
-                        <a href="#" class="popup button button_style_2 transition_slow mb-3 mb-lg-0">Что входит
+                        <a href="#scroll_item_3" class="scroll button button_style_2 transition_slow mb-3 mb-lg-0">Что входит
                             в франшизу</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="s1__decoration s1_bgAnimation">
-
         </div>
     </div>
 
@@ -234,7 +252,7 @@
         <div class="s2__decoration"></div>
     </div>
 
-    <div class="section section_3">
+    <div class="section section_3" id="scroll_item_3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-12">
@@ -352,7 +370,7 @@
         </div>
     </div>
 
-    <div class="section section_4">
+    <div class="section section_4" id="scroll_item_4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-12">
@@ -361,9 +379,9 @@
                         <h3 class="h3 my-3">Мы проанализируем перспективы открытыия сети визово-туристических цетров в
                             вашем городе и отправим вам подробный аудит и презентацию на почту</h3>
                     </div>
-                    <ul class="s4_description my-5">
-                        <a href="#" class="button button_style_2 transition_slow">Оставить заявку</a>
-                    </ul>
+                    <div class="s4_description my-5">
+                        <a href="#popup_form_big" class="popup button button_style_2 transition_slow">Оставить заявку</a>
+                    </div>
                 </div>
                 <div class="col-lg-8 col-12">
                     <ul class="s4_list">
@@ -499,7 +517,7 @@
                         <h2 class="h2">Почему именно сейчас?</h2>
                     </div>
                     <div class="s6_description my-5">
-                        <a href="#" class="button button_style_2 transition_slow">Оставить заявку</a>
+                        <a href="#popup_form_big" class="popup button button_style_2 transition_slow">Оставить заявку</a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-12">
@@ -610,78 +628,82 @@
     <div class="section section_8">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col">
-                    <div class="section_headers">
-                        <h3 class="h3">Всё остальное мы возьмём на себя!</h3>
-                        <h2 class="h2">Требования к партнёру</h2>
+                <div class="col-lg-5 col-12">
+                    <div class="section_headers mb-5">
+                        <h3 class="h3 mb-3">Всё остальное мы возьмём на себя!</h3>
+                        <h2 class="h2">Требования<br> к партнёру</h2>
                     </div>
                 </div>
-                <div class="col-lg-7 col">
-                    <ul class="s6_list">
-                        <li class="s6_list__item">
-                            <div class="marker marker-s6">
+                <div class="col-lg-7 col-12">
+                    <ul class="s8_list">
+                        <li class="s8_list__item">
+                            <div class="marker marker-s5 accent-green">
                                 <span class="numbersInMarker">01</span>
                             </div>
                             <p>Поддерживать и содействовать работе действующей сети</p>
                         </li>
-                        <li class="s6_list__item">
-                            <div class="marker marker-s6">
+                        <li class="s8_list__item">
+                            <div class="marker marker-s5 accent">
                                 <span class="numbersInMarker">02</span>
                             </div>
                             <p>Развивать сеть и продвигать бренд на территории КЗ и РФ</p>
                         </li>
-                        <li class="s6_list__item">
-                            <div class="marker marker-s6">
+                        <li class="s8_list__item">
+                            <div class="marker marker-s5 accent-orange">
                                 <span class="numbersInMarker">03</span>
                             </div>
                             <p>Выполнять условия договора с Правообладателем</p>
                         </li>
-                    </ul>
-                    <li class="s6_list__item">
-                        <div class="marker marker-s6">
-                            <span class="numbersInMarker">04</span>
-                        </div>
-                        <p>Вести поиск потенциальных франчайзи и открывать новые точки</p>
-                    </li>
-                    </ul>
-                    <li class="s6_list__item">
-                        <div class="marker marker-s6">
-                            <span class="numbersInMarker">05</span>
-                        </div>
-                        <p>Шоу рум (достаточные инвестиции на офис, команду, рекламу)</p>
-                    </li>
+                        <li class="s8_list__item">
+                            <div class="marker marker-s5 accent-green">
+                                <span class="numbersInMarker">04</span>
+                            </div>
+                            <p>Вести поиск потенциальных франчайзи и открывать новые точки</p>
+                        </li>
+                        <li class="s8_list__item">
+                            <div class="marker marker-s5 accent">
+                                <span class="numbersInMarker">05</span>
+                            </div>
+                            <p>Шоу рум (достаточные инвестиции на офис, команду, рекламу)</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section section_9">
+    <div class="section section_9" id="scroll_item_9">
         <div class="container">
             <div class="row">
-                <div class="col-12 section_headers">
+                <div class="col-12 section_headers mb-5">
                     <h2 class="h2">Коммерческие условия</h2>
                 </div>
-                <div class="col-lg-4 col">
-                    <li class="s9__item">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="s9__item">
                         <h3 class="h3">Единоразовый платёж</h3>
-                        <div class="numbersBold accent">240 000 $</div>
+                        <div class="numbersBold my-3">
+                            <div class="accent">240 000 $</div>
+                        </div>
                         <p>за эксклюзивное право в РФ и КЗ на 5 лет с возможными опциями</p>
-                    </li>
+                    </div>
                 </div>
-                <div class="col-lg-4 col">
-                    <li class="s9__item">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="s9__item">
                         <h3 class="h3">Периодические платежи</h3>
-                        <div class="numbersBold accent">10 %</div>
+                        <div class="numbersBold my-3">
+                            <div class="accent-orange">10 %</div>
+                        </div>
                         <p>чистой прибыли от продажи юнит франшиз и роялти на маркетинг</p>
-                    </li>
+                    </div>
                 </div>
-                <div class="col-lg-4 col">
-                    <li class="s9__item">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="s9__item">
                         <h3 class="h3">Затраты на рекламу</h3>
-                        <div class="numbersBold accent">50 $</div>
+                        <div class="numbersBold my-3">
+                            <div class="accent-green">50 $</div>
+                        </div>
                         <p>в месяц. С каждого открытого офиса. Маркетинговый для рекламы юнит франчайзи</p>
-                    </li>
+                    </div>
                 </div>
             </div>
         </div>
@@ -690,19 +712,19 @@
     <div class="section section_10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col">
-                    <div class="section_headers">
-                        <h3 class="h3">Что вы получите при покупке</h3>
+                <div class="col-lg-4 col-12">
+                    <div class="section_headers mb-3">
+                        <h3 class="h3 mb-3">Что вы получите при покупке</h3>
                         <h2 class="h2">Мастер-франшизы VisaTourService?</h2>
                     </div>
-                    <div class="s10_description">
-                        <a href="#" class="button">Оставить заявку</a>
+                    <div class="s10_description my-5">
+                        <a href="#popup_form_big" class="popup button button_style_2 transition_slow">Оставить заявку</a>
                     </div>
                 </div>
-                <div class="col-lg-8 col">
+                <div class="col-lg-8 col-12">
                     <ul class="s10_list">
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent-green">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -712,7 +734,7 @@
                             <p>Действующий бизнес, приносящий хороший доход</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -722,7 +744,7 @@
                             <p>Эксклюзивное право представлять торговый знак на территории двух стран</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent-orange">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -732,7 +754,7 @@
                             <p>Отсутствие рисков (все эксперименты мы провели на себе)</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent-green">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -742,7 +764,7 @@
                             <p>Полностью настроенные работающие сайты/CRM/маркетинг/обучающую платформу, колл-центры</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -752,7 +774,7 @@
                             <p>Полное обучение по ведению бизнеса</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent-orange">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -762,7 +784,7 @@
                             <p>Обновляемые инструкции и стратегии Правообладателем</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent-green">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -772,7 +794,7 @@
                             <p>Поддержку профессиональной команды на протяжении всего срока работы</p>
                         </li>
                         <li class="s10_list__item">
-                            <div class="marker marker-s10">
+                            <div class="marker marker-s5 accent">
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
@@ -791,21 +813,22 @@
     <div class="section section_11">
         <div class="container">
             <div class="row">
-                <div class="col-12 section_headers">
+                <div class="col-12 section_headers mb-3">
                     <h2 class="h2">Отзывы наших франчайзи</h2>
                 </div>
-                <div class="col-lg-6 col">
+                <div class="col-lg-6 col-12">
                     <div class="s11__item">
-                        <div class="s11__item_header">
-                            <div class="marker marker-s11">
+                        <div class="s11__item_header my-3">
+                            <div class="marker marker-s11 accent-orange">
                                 <img src="img/feedback_icon1.png" alt="">
                             </div>
                             <div>
-                                <p>Город Прокопьевск</p>
-                                <span class="h3">Ирина Николаевна</span>
+                                <span>Город Прокопьевск</span>
+                                <div class="h3">Ирина Николаевна</div>
                             </div>
                         </div>
-                        <p>Долгим и очень тернистым был мой путь в выборе приоритета для открытия нового бизнес-проекта.
+                        <p class="my-3">Долгим и очень тернистым был мой путь в выборе приоритета для открытия нового
+                            бизнес-проекта.
                             В результате долгих мыслей и полноценного взвешивания всех предлагаемых условий для работы
                             мой выбор пал на компанию VisaTourService. Мне предложили очень удобные условия для работы,
                             полный пакет для ведения бизнеса. Ориентировочно, через полгода после начала работы,
@@ -818,18 +841,19 @@
                             у нашей компании в лице сотрудников главного офиса.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col">
+                <div class="col-lg-6 col-12">
                     <div class="s11__item">
-                        <div class="s11__item_header">
-                            <div class="marker marker-s11">
+                        <div class="s11__item_header my-3">
+                            <div class="marker marker-s11 accent-green">
                                 <img src="img/feedback_icon2.png" alt="">
                             </div>
                             <div>
-                                <p>Город Владимир</p>
-                                <span class="h3">Дмитрий Волков</span>
+                                <span>Город Владимир</span>
+                                <div class="h3">Дмитрий Волков</div>
                             </div>
                         </div>
-                        <p>Одним из главных этапов открытия бизнеса по франчайзингу является выбор опытного и успешного
+                        <p class="my-3">Одним из главных этапов открытия бизнеса по франчайзингу является выбор опытного
+                            и успешного
                             партнёра. Колоссальный опыт компании VisaTourService в сфере туризма и визовой деятельности
                             стал для меня, конечно, решающим фактором. Современная компания постоянно идёт в ногу
                             со временем, совершенствует себя, тем самым давая огромный потенциал для роста своим
@@ -852,22 +876,37 @@
     <div class="section section_12">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col section_headers">
-                    <h2 class="h2">Оставьте заявку</h2>
-                    <h3 class="h3 regular">и после звонка мы пришлём финансовый план</h3>
-                    <form action="">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="submit" value="Оставить заявку" class="button">
+                <div class="col-xl-6 col-lg-7 col-12 order-1 order-lg-0">
+                    <div class="section_headers mb-3">
+                        <h2 class="h2 mb-3">Оставьте заявку</h2>
+                        <h3 class="h3 regular mb-3">и после звонка мы пришлём финансовый план</h3>
+                    </div>
+                    <form action="" class="mb-5">
+                        <label for="name" class="input_style_1 transition_slow">
+                            <span>Имя</span>
+                            <input type="text" id="name" name="name" placeholder="Константин" class="input" required>
+                        </label>
+                        <label for="phone" class="input_style_1 transition_slow">
+                            <span>Телефон</span>
+                            <input type="text" id="phone" name="phone" placeholder="+7 (987) 654-32-10" class="input"
+                                   required autocomplete="off">
+                        </label>
+                        <label for="email" class="input_style_1 transition_slow">
+                            <span>Email</span>
+                            <input type="text" id="email" name="email" placeholder="pgg@vk.com" class="input" required>
+                        </label>
+                        <input type="submit" value="Оставить заявку"
+                               class="button_submit button button_style_1 transition_slow">
                         <p class="description">Оставляя свои контактные данные в этой форме, вы даёте своё согласие на
-                            <a href="#">обработку персональных данных </a></p>
+                            <a href="#" class="a_accent strong transition">обработку персональных данных </a></p>
                     </form>
                 </div>
-                <div class="col-lg-6 col section_headers">
-                    <h2 class="h2">Контакты</h2>
-                    <div class="s12__item">
-                        <div class="marker marker-s12">
+                <div class="col-xl-6 col-lg-5 col-12 order-0 order-lg-1">
+                    <div class="section_headers mb-5" id="scroll_item_contacts">
+                        <h2 class="h2">Контакты</h2>
+                    </div>
+                    <div class="s12__item mt-3 mb-5">
+                        <div class="marker marker-s7 accent">
                             <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -880,8 +919,8 @@
                             <p class="h3">Москва, Шухова 14, стр 9</p>
                         </div>
                     </div>
-                    <div class="s12__item">
-                        <div class="marker marker-s12">
+                    <div class="s12__item mt-3 mb-5">
+                        <div class="marker marker-s7 accent-green">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.02093 2.50049L3.61228 2.50049C3.38868 2.49959 3.16735 2.54548 2.96247 2.63524C2.75759 2.72499 2.57368 2.85664 2.42252 3.02173C2.27136 3.18683 2.15627 3.38174 2.08463 3.59398C2.013 3.80622 1.98639 4.03111 2.00652 4.25425C2.27497 6.72976 3.1192 9.10765 4.47137 11.1969C5.70406 13.1406 7.34876 14.7886 9.28866 16.0237C11.3832 17.3833 13.7679 18.2294 16.2496 18.4935C16.4717 18.5136 16.6954 18.4871 16.9067 18.4158C17.118 18.3445 17.3121 18.2299 17.4767 18.0794C17.6414 17.9288 17.7729 17.7455 17.863 17.5411C17.9531 17.3368 17.9997 17.1159 17.9999 16.8926L17.9999 14.4791C18.0038 14.0887 17.8658 13.7102 17.6117 13.4142C17.3576 13.1182 17.0048 12.9248 16.619 12.8702C15.8481 12.7683 15.0913 12.5794 14.3629 12.3071C14.0755 12.1988 13.7632 12.1754 13.4629 12.2396C13.1627 12.3037 12.8871 12.4528 12.6688 12.6691L11.6491 13.6908C9.63908 12.5455 7.97478 10.8779 6.83184 8.8639L7.8515 7.84221C8.06736 7.62349 8.21613 7.34734 8.28016 7.04649C8.3442 6.74564 8.32082 6.43271 8.21279 6.14477C7.94098 5.41489 7.75244 4.65654 7.65078 3.88419C7.59576 3.49341 7.39931 3.13651 7.0988 2.88139C6.79829 2.62626 6.41468 2.4907 6.02093 2.50049Z"
@@ -893,8 +932,8 @@
                             <p class="h3">+7 985 119-03-32</p>
                         </div>
                     </div>
-                    <div class="s12__item">
-                        <div class="marker marker-s12">
+                    <div class="s12__item mt-3 mb-5">
+                        <div class="marker marker-s7 accent-orange">
                             <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.80465 8.73707L13.9999 14.3347L25.1953 8.737C25.1109 7.26651 23.8916 6.1001 22.4 6.1001H5.59999C4.10831 6.1001 2.88908 7.26655 2.80465 8.73707Z"
@@ -913,69 +952,71 @@
                 </div>
             </div>
         </div>
+        <div class="s1__decoration s1_bgAnimation">
+        </div>
     </div>
 
 </main>
 <footer class="footer section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col">
+        <div class="row py-5">
+            <div class="col-lg-3 col order-0 p-0">
                 <div class="header_logo__wrapper">
                     <div class="header_logo__img">
-                        <img src="img/logo.png" alt="VisaTourService">
+                        <img src="img/logo_footer.png" alt="VisaTourService">
                     </div>
                     <div class="header_logo__company">
                         <div class="header_logo__company__name">
-                            <span>VisaTourService</span>
+                            <span class="strong">VisaTourService</span>
                         </div>
                         <div class="header_logo__company__describer">
-                            <span>МЕЖДУНАРОДНАЯ СЕТЬ СЕРВИСНО-ВИЗОВЫХ ЦЕНТРОВ</span>
+                            <span class="uppercase small">Международная СЕТЬ СЕРВИСНО-ВИЗОВЫХ ЦЕНТРОВ</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col">
-                <nav>
-                    <a href="#" class="link_on_element header_navLink a">Высокий доход</a>
-                    <a href="#" class="link_on_element header_navLink a">Что входит?</a>
-                    <a href="#" class="link_on_element header_navLink a">Коммерческие условия</a>
-                    <a href="#" class="link_on_element header_navLink a">Контакты</a>
+            <div class="col-xl-6 col-12 order-2 order-xl-1 pt-3 pt-xl-0 px-0 px-xl-4">
+                <nav class="header_nav">
+                    <a href="#scroll_item_4" class="scroll header_navLink a transition_slow"><span class="h5">Высокий доход</span></a>
+                    <a href="#scroll_item_3" class="scroll header_navLink a transition_slow"><span class="h5">Что входит?</span></a>
+                    <a href="#scroll_item_9" class="scroll header_navLink a transition_slow"><span class="h5">Коммерческие условия</span></a>
+                    <a href="#scroll_item_contacts" class="scroll header_navLink a transition_slow"><span class="h5">Контакты</span></a>
                 </nav>
             </div>
-            <div class="col-lg-3 col">
+            <div class="col-md col-12 order-1 order-xl-2 pt-5 pt-md-0 px-0">
                 <ul class="footer__socialLinks">
-                    <li class="footer__socialLink">
-                        <a href="#" class="link_on_element"></a>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="footer__socialLink transition">
+                        <a href="https://instagram.com/" class="link_on_element"></a>
+                        <svg width="18" height="18" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.33333 0C6.06795 0 5.78562 0.0109389 4.89905 0.0484436C4.00883 0.092199 3.40668 0.230237 2.87536 0.436513C2.31928 0.646446 1.81568 0.97513 1.39965 1.39965C0.973946 1.8147 0.645079 2.31859 0.436513 2.87536C0.230237 3.40668 0.092199 4.00883 0.0484436 4.89905C0.00833438 5.78614 0 6.06795 0 8.33333C0 10.5987 0.0109389 10.881 0.0484436 11.7676C0.092199 12.6552 0.230237 13.26 0.436513 13.7913C0.646446 14.3474 0.97513 14.851 1.39965 15.267C1.8147 15.6927 2.31859 16.0216 2.87536 16.2302C3.40668 16.4338 4.01144 16.5745 4.89905 16.6182C5.78614 16.6583 6.06795 16.6667 8.33333 16.6667C10.5987 16.6667 10.881 16.6557 11.7676 16.6182C12.6552 16.5745 13.26 16.4333 13.7913 16.2302C14.3474 16.0202 14.851 15.6915 15.267 15.267C15.6933 14.8524 16.0222 14.3484 16.2302 13.7913C16.4338 13.26 16.5745 12.6552 16.6182 11.7676C16.6583 10.8805 16.6667 10.5987 16.6667 8.33333C16.6667 6.06795 16.6557 5.78562 16.6182 4.89905C16.5745 4.01144 16.4333 3.40355 16.2302 2.87536C16.0202 2.31928 15.6915 1.81568 15.267 1.39965C14.8524 0.973398 14.3484 0.644445 13.7913 0.436513C13.26 0.230237 12.6552 0.092199 11.7676 0.0484436C10.8805 0.00833438 10.5987 0 8.33333 0ZM8.33333 1.50019C10.5581 1.50019 10.8237 1.51113 11.703 1.54863C12.5141 1.58666 12.9558 1.72209 13.2491 1.83669C13.6116 1.97052 13.9398 2.18353 14.2096 2.4602C14.4858 2.7289 14.698 3.05629 14.8305 3.41814C14.9451 3.7114 15.0805 4.15312 15.1186 4.96416C15.1561 5.84344 15.167 6.10962 15.167 8.33385C15.167 10.5581 15.1561 10.8243 15.1154 11.7035C15.0717 12.5146 14.9362 12.9563 14.8222 13.2496C14.6643 13.6408 14.4883 13.9142 14.1976 14.2101C13.9269 14.4851 13.5989 14.697 13.2371 14.831C12.9475 14.9456 12.4995 15.0811 11.6853 15.1191C10.8014 15.1566 10.5409 15.1675 8.31042 15.1675C6.07993 15.1675 5.82 15.1566 4.93499 15.116C4.12395 15.0722 3.6765 14.9368 3.38324 14.8227C2.98735 14.6649 2.71597 14.4888 2.4253 14.1981C2.13204 13.9049 1.94556 13.6257 1.80179 13.2376C1.68511 12.948 1.55176 12.5 1.50852 11.6858C1.47883 10.8123 1.46477 10.5414 1.46477 8.32135C1.46477 6.10233 1.47883 5.83094 1.50852 4.94645C1.55176 4.13229 1.68511 3.68536 1.80179 3.3947C1.94556 2.99829 2.13256 2.72742 2.4253 2.43416C2.71544 2.14402 2.98735 1.95649 3.38324 1.8096C3.6765 1.69552 4.11302 1.56009 4.92718 1.51946C5.81114 1.48769 6.07159 1.47623 8.29895 1.47623L8.33333 1.50019ZM8.33333 4.05624C7.77146 4.05603 7.21506 4.16655 6.69592 4.38147C6.17678 4.5964 5.70508 4.91151 5.30778 5.30882C4.91047 5.70612 4.59535 6.17782 4.38043 6.69696C4.16551 7.2161 4.05499 7.7725 4.0552 8.33438C4.05499 8.89625 4.16551 9.45265 4.38043 9.97179C4.59535 10.4909 4.91047 10.9626 5.30778 11.3599C5.70508 11.7572 6.17678 12.0724 6.69592 12.2873C7.21506 12.5022 7.77146 12.6127 8.33333 12.6125C8.89521 12.6127 9.45161 12.5022 9.97075 12.2873C10.4899 12.0724 10.9616 11.7572 11.3589 11.3599C11.7562 10.9626 12.0713 10.4909 12.2862 9.97179C12.5012 9.45265 12.6117 8.89625 12.6115 8.33438C12.6117 7.7725 12.5012 7.2161 12.2862 6.69696C12.0713 6.17782 11.7562 5.70612 11.3589 5.30882C10.9616 4.91151 10.4899 4.5964 9.97075 4.38147C9.45161 4.16655 8.89521 4.05603 8.33333 4.05624ZM8.33333 11.1123C6.79773 11.1123 5.55538 9.86998 5.55538 8.33438C5.55538 6.79877 6.79773 5.55642 8.33333 5.55642C9.86894 5.55642 11.1113 6.79877 11.1113 8.33438C11.1113 9.86998 9.86894 11.1123 8.33333 11.1123ZM13.784 3.88538C13.7837 4.15087 13.6781 4.40538 13.4903 4.59301C13.3024 4.78064 13.0478 4.88603 12.7823 4.88603C12.6511 4.88603 12.5211 4.86017 12.3998 4.80994C12.2785 4.7597 12.1683 4.68607 12.0755 4.59325C11.9827 4.50043 11.909 4.39023 11.8588 4.26896C11.8086 4.14768 11.7827 4.01769 11.7827 3.88642C11.7827 3.75515 11.8086 3.62517 11.8588 3.50389C11.909 3.38261 11.9827 3.27242 12.0755 3.1796C12.1683 3.08677 12.2785 3.01314 12.3998 2.96291C12.5211 2.91267 12.6511 2.88682 12.7823 2.88682C13.3329 2.88682 13.784 3.33479 13.784 3.88538Z"
                                   fill="currentcolor"/>
                         </svg>
                     </li>
-                    <li class="footer__socialLink">
-                        <a href="#" class="link_on_element"></a>
-                        <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="footer__socialLink transition">
+                        <a href="https://www.facebook.com/" class="link_on_element"></a>
+                        <svg width="10" height="18" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.0679 16.6667V8.84618H0V6.03043H2.0679V3.62542C2.0679 1.73553 3.28942 0 6.10405 0C7.24365 0 8.08633 0.10925 8.08633 0.10925L8.01993 2.73868C8.01993 2.73868 7.16053 2.73032 6.22272 2.73032C5.20772 2.73032 5.0451 3.19807 5.0451 3.97442V6.03043H8.10062L7.96767 8.84618H5.0451V16.6667H2.0679Z"
                                   fill="currentcolor"/>
                         </svg>
                     </li>
-                    <li class="footer__socialLink">
-                        <a href="#" class="link_on_element"></a>
-                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="footer__socialLink transition">
+                        <a href="https://vk.com/" class="link_on_element"></a>
+                        <svg width="18" height="18" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M16.2844 0.658319C16.3997 0.279161 16.2844 0 15.7323 0H13.9094C13.4456 0 13.2317 0.240967 13.1157 0.506934C13.1157 0.506934 12.1886 2.72633 10.8755 4.16797C10.4505 4.58601 10.2574 4.71865 10.0255 4.71865C9.90952 4.71865 9.73521 4.58602 9.73521 4.20616V0.658319C9.73521 0.202773 9.60744 0 9.22134 0H6.35473C6.06515 0 5.89085 0.211107 5.89085 0.411797C5.89085 0.843038 6.54778 0.943036 6.61514 2.1569V4.79434C6.61514 5.3728 6.50889 5.47766 6.27695 5.47766C5.65891 5.47766 4.15547 3.24785 3.26313 0.696513C3.09021 0.199996 2.91522 0 2.44925 0H0.624987C0.104164 0 0 0.240967 0 0.506934C0 0.980535 0.618043 3.33326 2.87841 6.445C4.38532 8.56996 6.50681 9.72202 8.43941 9.72202C9.59841 9.72202 9.74146 9.46647 9.74146 9.02551V7.41929C9.74146 6.90749 9.85118 6.80541 10.2185 6.80541C10.4894 6.80541 10.9525 6.93874 12.0345 7.96303C13.2706 9.17758 13.474 9.72202 14.1698 9.72202H15.9927C16.5135 9.72202 16.7747 9.46647 16.6247 8.96092C16.4594 8.45816 15.8691 7.72831 15.0865 6.86236C14.6615 6.36931 14.024 5.83807 13.8303 5.57211C13.5601 5.23114 13.6372 5.07906 13.8303 4.77559C13.8303 4.77559 16.0524 1.70205 16.2837 0.658319H16.2844Z"
                                   fill="currentcolor"/>
                         </svg>
                     </li>
-                    <li class="footer__socialLink">
-                        <a href="#" class="link_on_element"></a>
-                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="footer__socialLink transition">
+                        <a href="https://telegram.org/" class="link_on_element"></a>
+                        <svg width="18" height="18" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.6192 1.1134L14.1041 11.4919C13.9143 12.2244 13.4195 12.4067 12.7163 12.0616L8.88411 9.59072L7.03499 11.1468C6.83036 11.3259 6.65921 11.4757 6.26483 11.4757L6.54015 8.06063L13.6427 2.4449C13.9515 2.20399 13.5758 2.07052 13.1628 2.31142L4.38222 7.14909L0.602125 6.11385C-0.220121 5.88922 -0.235004 5.39438 0.773271 5.0493L15.5588 0.0651294C16.2434 -0.1595 16.8424 0.198605 16.6192 1.1134Z"
                                   fill="currentcolor"/>
                         </svg>
                     </li>
-                    <li class="footer__socialLink">
-                        <a href="#" class="link_on_element"></a>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="footer__socialLink transition">
+                        <a href="https://www.whatsapp.com/" class="link_on_element"></a>
+                        <svg width="18" height="18" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.15 9.98802C11.9411 9.88229 10.924 9.38594 10.7339 9.31511C10.5438 9.2474 10.4057 9.21198 10.2672 9.42083C10.1318 9.62448 9.73281 10.0906 9.61094 10.2266C9.48906 10.3625 9.36927 10.3729 9.16354 10.2807C8.95469 10.175 8.2875 9.95781 7.49531 9.2474C6.87656 8.69688 6.46458 8.01875 6.34219 7.8099C6.22031 7.60365 6.32865 7.48698 6.43177 7.38385C6.52656 7.28906 6.64063 7.14531 6.74635 7.02031C6.84688 6.89531 6.87917 6.81146 6.9526 6.67604C7.02031 6.52969 6.98542 6.41563 6.93385 6.3125C6.88229 6.20938 6.46719 5.18698 6.29375 4.77969C6.12813 4.37552 5.95469 4.42708 5.82708 4.42708C5.70781 4.41615 5.56927 4.41615 5.43125 4.41615C5.29323 4.41615 5.06771 4.46771 4.8776 4.66563C4.6875 4.87448 4.15052 5.37344 4.15052 6.38281C4.15052 7.39479 4.89375 8.37396 4.99688 8.52031C5.1026 8.65573 6.45885 10.7391 8.53958 11.6344C9.03594 11.8432 9.42136 11.9682 9.7224 12.0714C10.2188 12.2286 10.6719 12.2068 11.0297 12.1552C11.4255 12.0901 12.2557 11.6531 12.4297 11.1651C12.6063 10.674 12.6063 10.2672 12.5547 10.175C12.5031 10.0802 12.3677 10.0286 12.1589 9.93646L12.15 9.98802ZM8.37656 15.1042H8.36563C7.13385 15.1042 5.91615 14.7703 4.8526 14.1464L4.60313 13.9974L1.99896 14.6755L2.69896 12.1417L2.53073 11.8813C1.84295 10.7877 1.47807 9.52208 1.47813 8.23021C1.47813 4.44896 4.57344 1.36458 8.38177 1.36458C10.2266 1.36458 11.9573 2.08333 13.2594 3.38542C13.9017 4.0201 14.4112 4.77635 14.7582 5.61003C15.1051 6.44372 15.2826 7.33815 15.2802 8.24115C15.275 12.0198 12.1823 15.1042 8.37917 15.1042H8.37656ZM14.2495 2.39531C12.6651 0.865104 10.5818 0 8.36563 0C3.79479 0 0.0729167 3.70573 0.0703125 8.2599C0.0703125 9.71406 0.45 11.1328 1.17708 12.3885L0 16.6667L4.4 15.5193C5.61891 16.1764 6.98137 16.5221 8.36615 16.5255H8.36875C12.9422 16.5255 16.6641 12.8198 16.6667 8.2625C16.6667 6.05729 15.8068 3.98177 14.2391 2.42188L14.2495 2.39531Z"
                                   fill="currentcolor"/>
                         </svg>
@@ -984,10 +1025,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 footer__divide_line">
+            <div class="col-12 footer__divide_line py-3 px-0">
                 <div class="h5">2021 © VisaTourService. Все права защищены.</div>
-                <div class="description">Разработка сайта - <a href="mailto: adjo@ro.ru"><img src="img/millenium.svg"
-                                                                                              alt="millenium"></a></div>
+                <div class="description">Разработка сайта - <a href="mailto: adjo@ro.ru" class="ml-1"><img src="img/millenium.svg" alt="millenium"></a></div>
             </div>
         </div>
     </div>

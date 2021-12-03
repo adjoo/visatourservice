@@ -3,3 +3,57 @@
 
 
 .footer
+  background-color: $dark_text
+  color: $bg
+  padding: 0
+  @media (max-width: 991px)
+    padding: 0 1rem
+
+.footer__socialLinks
+  display: flex
+  align-items: center
+  margin: -1em
+  justify-content: flex-end
+  @media (max-width: 767px)
+    justify-content: flex-start
+  @media (max-width: 575px)
+    font-size: .8rem
+
+.footer__socialLink
+  position: relative
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  margin: 1em
+  min-width: 3.6em
+  max-width: 3.6em
+  min-height: 3.6em
+  max-height: 3.6em
+  border-radius: 50%
+  background-color: $bg
+  svg
+    color: $gray
+    max-width: 1.8em
+    max-height: 1.8em
+  &:hover
+    svg
+      color: $accent
+.footer
+  .header_nav
+    @media (max-width: 991px)
+      margin: 0 -1rem
+.footer__divide_line
+  border-top: 1px solid $bg
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  div
+    @media (max-width: 500px)
+      margin-top: 1rem
+      margin-bottom: 1rem
+  .h5
+    margin-right: 3rem
+  .description
+    display: flex
+    align-items: center
+    margin-left: auto
