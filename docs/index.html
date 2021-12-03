@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>VTS РФ</title>
 
-    <meta http-equiv="cache-control" content="no-cache" />
+    <!--<meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Expires" content="-1" />-->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
@@ -69,7 +69,7 @@
         <div class="popup_window__title ">
             <span class="h3">Заказ<br> обратного звонка</span>
         </div>
-        <form action="" class="mt-3">
+        <form action="" class="mt-3 js_form_ajax_post">
             <label for="popup_small_name" class="input_style_1 mb-5 transition_slow">
                 <span>Имя</span>
                 <input type="text" id="popup_small_name" name="name" placeholder="Константин" class="input" required>
@@ -79,6 +79,7 @@
                 <input type="text" id="popup_small_phone" name="phone" placeholder="+7 (987) 654-32-10" class="input" required
                        autocomplete="off">
             </label>
+            <input type="hidden" value="Форма Заказать звонок" name="where">
             <input type="submit" value="Заказать звонок" class="button_submit button button_style_1 transition_slow">
             <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
                 <a href="#" class="a  transition">обработку персональных данных </a></p>
@@ -89,7 +90,7 @@
         <div class="popup_window__title">
             <span class="h3">Оставьте заявку<br> и мы свяжемся с вами</span>
         </div>
-        <form action="" class="mt-3">
+        <form action="" class="mt-3 js_form_ajax_post">
             <label for="popup_big_name" class="input_style_1 mb-5 transition_slow">
                 <span>Имя</span>
                 <input type="text" id="popup_big_name" name="name" placeholder="Константин" class="input" required>
@@ -103,11 +104,18 @@
                 <span>Email</span>
                 <input type="text" id="popup_big_email" name="email" placeholder="pgg@vk.com" class="input" required>
             </label>
+            <input type="hidden" value="Форма Оставить заявку" name="where">
             <input type="submit" value="Оставить заявку" class="button_submit button button_style_1 transition_slow">
             <p class="description">Нажимая «Заказать звонок», вы даёте согласие на 
                 <a href="#" class="a  transition">обработку персональных данных </a></p>
         </form>
     </div>
+
+    <div class="popup_window mfp-hide" id="js_popup_greeting">
+        <div class="js_popup_message_success h3">Спасибо за заявку!</div>
+        <div class="js_popup_message_fail h3">Попробуйте позднее</div>
+    </div>
+
 </div>
 
 <main class="main">
@@ -885,7 +893,7 @@
                         <h2 class="h2 mb-3">Оставьте заявку</h2>
                         <h3 class="h3_r mb-3">и после звонка мы пришлём финансовый план</h3>
                     </div>
-                    <form action="" class="mb-5">
+                    <form action="" class="mb-5 js_form_ajax_post">
                         <label for="name" class="input_style_1 transition_slow">
                             <span>Имя</span>
                             <input type="text" id="name" name="name" placeholder="Константин" class="input" required>
@@ -899,6 +907,7 @@
                             <span>Email</span>
                             <input type="text" id="email" name="email" placeholder="pgg@vk.com" class="input" required>
                         </label>
+                        <input type="hidden" value="Форма Оставить заявку внизу страницы" name="where">
                         <input type="submit" value="Оставить заявку"
                                class="button_submit button button_style_1 transition_slow">
                         <p class="description">Оставляя свои контактные данные в этой форме, вы даёте своё согласие на
